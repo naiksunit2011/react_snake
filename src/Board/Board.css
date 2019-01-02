@@ -1,0 +1,35 @@
+.board-pixel{
+    height: 15px;
+    width: 15px;
+    border: 1px solid #e3e3e3;
+    display: inline-block;
+    border-radius: 5px;
+}
+.board-row{
+    display: block;
+    height: 17px;
+}
+.board-inner-wrapper{
+    margin: 50px;
+}
+.dark-pixel{
+    background-color: #443844;
+}
+.board-header-wrapper{
+    font-size: 20px;
+    color : #443844;
+}
+.board-footer-wrapper{
+    font: bold 44px/50px Georgia, sans-serif;
+    color: red;
+}
+
+#startBtn{
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #00489b;
+}
