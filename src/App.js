@@ -15,6 +15,9 @@ class App extends Component {
         <div className="board">
           <Board/>
         </div>
+        <div class="footer-wrapper">
+          Made with <span role="img" aria-label="heart">❤️</span> in India <span role="img" aria-label="star">★</span> By Sunit Naik
+        </div>
       </div>
     );
   }

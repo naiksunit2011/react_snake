@@ -6,9 +6,10 @@ class Board extends Component {
 
     toggleFlag = 0
     isStart = false;
-    size = 35;
+    size = 15;
     speed = 200;
-    snakeLength = 10;
+    snakeLength = 5;
+    winnerSnakeLength = 10;
     foodId = "0_5";
     currentX = 0;
     currentY = 0;
@@ -101,7 +102,7 @@ class Board extends Component {
     }
 
     increaseSpeed() {
-        if (this.speed === 100) {
+        if (this.winnerSnakeLength === this.snakeLength) {
             this.declareWinner();
         }
         this.speed = this.speed - 10;
@@ -164,7 +165,7 @@ class Board extends Component {
             <div>
                 <Bang showFireWork={this.state.showFireWork} />
                 <div className="board-header-wrapper">
-                    <span>Total Score : {this.snakeLength - 10}</span>
+                    <span>Total Score : {(this.snakeLength-5)*2}</span>
                 </div>
                 <div className="board-inner-wrapper">{this.renderBoard()}</div>
                 <div className="board-control-wrapper">

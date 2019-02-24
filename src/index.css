@@ -1,4 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Signika');
+
+*{
+    font-family: 'Signika', sans-serif!important;
+}
 body{
 	margin-top: 0px;
 	margin-left: 0px;
+}
+
+html,body{
+    height: 100%;
+    margin: 0px;
+    width: 100%;
 }
